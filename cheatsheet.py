@@ -1,34 +1,34 @@
 
-#---------- resizing an circular array without changing the starting index of circular array-------------
+# ---------- resizing an circular array without changing the starting index of circular array-------------
 
 # def resize(circ,start,size):
 #     resizedCirc = [0]*(len(circ)+2) # 2 added here because we are increasing the size of the array by 2
 #     index_circ = start
 #     index_resizedCirc = start
-    
+
 #     i = 0
 #     while(i < size):
 #         resizedCirc[index_resizedCirc] = circ[index_circ]
 #         index_circ = (index_circ+1)%len(circ)
-#         index_resizedCirc = (index_resizedCirc+1)%len(resizedCirc)  
+#         index_resizedCirc = (index_resizedCirc+1)%len(resizedCirc)
 #         i = i+1
 
 #     return resizedCirc
 
 # circ=[20,30,40,50,10] #creating a circular array with start 4 and size 5
-# circ=resize(circ,4,5) 
+# circ=resize(circ,4,5)
 # print(circ)
 
 # Output: [40, 50, 0, 0, 10, 20, 30] by increasing the size by 2
 
 # ---------------------END------------------------
 
-#-----------------Creating an circular array from an liner array-------------------
+# -----------------Creating an circular array from an liner array-------------------
 
 # def linToCir(arr,startingIndex):
 #     cir = [0]*len(arr)
 #     index = startingIndex
-    
+
 #     for i in range(len(arr)):
 #         cir[index] = arr[i]
 #         index = (index+1)%len(arr)
@@ -53,19 +53,18 @@
 #         x = start
 #         st = start
 #         i = 0
-        
+
 #         while i < size:
 #             newCir[x] = cir[st]
 #             x = (x+1)%len(newCir)
 #             st = (st+1)%len(cir)
 #             i += 1
-            
+
 #         cir = newCir
 #         ind = (start+size)%len(cir)
 #         cir[ind] = item
 #         size += 1
 #         return newCir
-    
 
 
 # a = [4, 5, 1, 2, 3]
@@ -89,7 +88,7 @@
 
 # print(insertatlast([1,2,0,0,0,3,4,5], 5, 5, 100))
 
-#------------reversing an array: in place------------
+# ------------reversing an array: in place------------
 
 # def reverse(source):
 #     i=0 #pointer at 0th index of source
@@ -101,12 +100,12 @@
 
 #         i=i+1
 #         j=j-1
-        
+
 # a=[10,20,30,40,50]
 # reverse(a)
 # print(a)
 
-#-------------------reversing an array: out of place----------------------
+# -------------------reversing an array: out of place----------------------
 
 # def reverse(source):
 #     dest=[0]*len(source)  #creating an empty array named dest having the same length as source
@@ -123,7 +122,7 @@
 # b=reverse(a)
 # print(b)
 
-#--------------right rotating an array by one place---------------------
+# --------------right rotating an array by one place---------------------
 
 # def rightRotate(source):
 #     temp=source[len(source)-1] #copying the last element of the array in temp
@@ -139,7 +138,7 @@
 # print(a)
 
 
-#--------------right shifting an array by k places---------------
+# --------------right shifting an array by k places---------------
 
 # def rightShift(source,k):
 #     i=len(source)-1 #pointer at the last index of source
@@ -156,7 +155,7 @@
 # rightShift(a,3)
 # print(a)
 
-#---------------- a methord to left rotating an array by k place-------------
+# ---------------- a methord to left rotating an array by k place-------------
 # def left_rotate(arr, d):
 #     n = len(arr)
 #     for i in range(d):
@@ -170,7 +169,7 @@
 # b = left_rotate(a, 2)
 # print(b)
 
-#---------------- Insert an tem in a array at k index------------------------
+# ---------------- Insert an tem in a array at k index------------------------
 # def insert(a, index, value, size):
 #     if size == len(a):
 #         print('No more space')
@@ -190,8 +189,7 @@
 # -----------------------------------------------------
 
 
-
-#-----------------forward printing a circular array-----------
+# -----------------forward printing a circular array-----------
 # def printForward(c,start,size):
 #     index=start
 #     i=0
@@ -203,19 +201,20 @@
 # circularArray=[40,50,0,0,0,0,0,0,10,20,30] #creating a circular array with start 8 and size 5
 # printForward(circularArray,8,5)
 
-#----------------reverse printing a circular array-------------
+# ----------------reverse printing a circular array-------------
 
-def printReverse(c,start,size):
-    index=(start+size-1)%len(c)
+def printReverse(c, start, size):
+    index = (start+size-1) % len(c)
 
-    i=0
-    while(i<size):
+    i = 0
+    while(i < size):
         print(c[index], end=' ')
-        index=index-1
-        if(index<0):
-            index=len(c)-1  
-        i=i+1
-        
-circularArray=[40,50,0,0,0,0,0,0,10,20,30] #creating a circular array with start 8 and size 5
-printReverse(circularArray,8,5)
+        index = index-1
+        if(index < 0):
+            index = len(c)-1
+        i = i+1
 
+
+# creating a circular array with start 8 and size 5
+circularArray = [40, 50, 0, 0, 0, 0, 0, 0, 10, 20, 30]
+printReverse(circularArray, 8, 5)

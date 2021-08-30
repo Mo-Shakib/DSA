@@ -4,19 +4,20 @@ class Node:
         self.nextAddress = next
         self.prevAddress = previous
 
+
 class DoublyList:
-    def __init__(self,a):
-        if len(a)==0 :
+    def __init__(self, a):
+        if len(a) == 0:
             print("Array cannot be empty")
         else:
             self.head = None
-            dummyHead = Node(None,None,None)
+            dummyHead = Node(None, None, None)
             self.head = dummyHead
             object = None
             next = dummyHead
             prev = dummyHead
             for i in a:
-                object = Node(i,None,None)
+                object = Node(i, None, None)
                 object.prevAddress = prev
                 prev = object
                 next.nextAddress = object
@@ -34,8 +35,10 @@ class DoublyList:
                 object = object.nextAddress
             print()
 
-list1 = DoublyList([4,5,3])
-list2 = DoublyList([9,5,2])
+
+list1 = DoublyList([4, 5, 3])
+list2 = DoublyList([9, 5, 2])
+
 
 def sum(*list):
     sum = 0
@@ -54,5 +57,6 @@ def sum(*list):
     newNode = DoublyList(list)
     return newNode
 
-list3 = sum(list1,list2)
+
+list3 = sum(list1, list2)
 list3.showList()
