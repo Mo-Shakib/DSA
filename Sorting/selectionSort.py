@@ -3,7 +3,8 @@ def selectionSort(x):
     for i in range(len(x)):
         min = i
         for j in range(i, len(x)):
-            if x[j] < x[min]: min = j
+            if x[j] < x[min]:
+                min = j
         x[i], x[min] = x[min], x[i]
     return x
 
@@ -14,15 +15,21 @@ print(x)
 #--------------Selection sort by recursion---------------
 
 def min_idx( a , i , j ):
-    if i == j: return i
+    if i == j: 
+        return i
     k = min_idx(a, i + 1, j)
-    if a[i] < a[k]: return i
+    if a[i] < a[k]:
+        return i
     return k
      
 def selectionSort_by_recursion(a, n, index = 0):
-    if index == n:  return -1
+    if index == n: 
+        return -1
+    
     k = min_idx(a, index, n-1)
-    if k != index: a[k], a[index] = a[index], a[k]
+    if k != index:
+        a[k], a[index] = a[index], a[k]
+    
     selectionSort_by_recursion(a, n, index + 1)
      
 # Tester 
