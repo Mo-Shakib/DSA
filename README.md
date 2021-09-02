@@ -9,7 +9,7 @@ As of now, the repository contains 3 main directories: [**Bookmarks**](bookmarks
 
 Contains all data structure questions categorised into sub-directories like stack, queue, etc according to their type.
 
-1. [Array](data_structures/array)
+1. [Array](data-structures/array)
 2. [Dictionary]()
 3. [Binary Search Tree](data_structures/bst)
 4. [Linked List](data_structures/linked_list)
