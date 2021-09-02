@@ -7,7 +7,7 @@ As of now, the repository contains 3 main directories: [**Bookmarks**](bookmarks
 
 ### 🧬 Data Structures
 
-Contains all data structure questions categorised into sub-directories like stack, queue, etc according to their type.
+Contains all data structure questions categorized into sub-directories like stack, queue, etc. according to their type.
 
 1. [Array](https://github.com/Mo-Shakib/DSA/tree/main/Data-Structures/Array)
 2. [Dictionary]()
@@ -25,6 +25,7 @@ This directory contains various types of algorithm questions like Dynamic Progra
 
 ### 📑 Bookmarks
 You can find useful links in this repository in the different markdown files. Below is a table of contents.
-1. [Articles](bookmarks/articles.md)
+1. [Articles](https://github.com/Mo-Shakib/DSA/blob/main/Bookmarks/articles.md)
 2. [Books](bookmarks/books.md)
 3. [Videos](bookmarks/videos.md)
+
