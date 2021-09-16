@@ -23,9 +23,17 @@ Contains all data structure questions categorized into sub-directories like stac
 
 ### 🗜 Algorithms
 
-This directory contains various types of algorithm questions like Dynamic Programming, Sorting, Greedy, etc. The current structure of this directory is like -
+This directory contains various types of algorithm questions like Dynamic Programming, Sorting, Greedy, etc. The current structure of this directory is:
 1. [Sorting](Algorithms/Sorting)
 2. [Recursion](Algorithms/Recursion)
+
+
+
+### 🔗 Links 
+
+1. [Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+
+
 
 ### 📑 Bookmarks
 You can find useful links in this repository in the different markdown files. Below is a table of contents.
